@@ -1,0 +1,54 @@
+@use "./Interactive-El/button";
+@use "./typography";
+@use "./Interactive-El/SubtaskCheckbox";
+@use "./Interactive-El/textField";
+@use "./Interactive-El/Dropdown";
+@use "./Navbar";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap");
+:root {
+  --font: "Plus Jakarta Sans", sans-serif;
+  --purple-g: #ffffff;
+  // #625fc710
+  --purple-g-h: #ffffff;
+  // #625fc725
+  --purple: #635fc7;
+  --purple-L: #a8a4ff;
+  --black: #000112;
+  --gray-D-1: #20212c;
+  --gray-D-2: #2b2c37;
+  --gray-D-3: #3e3f4e;
+  --gray-L-1: #828fa3;
+  --gray-L-2: #e4ebfa;
+  --gray-L-3: #f4f7fd;
+  --white: #ffffff;
+  --red: #ea5555;
+  --red-L: #ff9898;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font);
+  color: var(--white);
+}
+body {
+  background-color: var(--gray-D-1);
+}
+.purple {
+  background-color: var(--purple);
+  &:hover {
+    background-color: var(--purple-L);
+  }
+}
+.red {
+  background-color: var(--red);
+  &:hover {
+    background-color: var(--red-L);
+  }
+}
+.gray {
+  background-color: var(--purple-g);
+  color: var(--purple) !important;
+  &:hover {
+    background-color: var(--purple-g-h);
+  }
+}

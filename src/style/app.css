@@ -1,0 +1,258 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap");
+button {
+  border: 0;
+  border-radius: 100px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.button-1 {
+  width: 255px;
+  height: 48px;
+}
+
+.button-2 {
+  height: 40px;
+  width: 100%;
+}
+
+.h-XL {
+  font-size: 26px;
+}
+
+.h-L {
+  font-size: 20px;
+}
+
+.h-M {
+  font-size: 18px;
+}
+
+.h-S {
+  font-size: 15px;
+}
+
+[class*=h] {
+  font-weight: 700;
+}
+
+.body-L {
+  font-size: 15px;
+}
+
+.body-M {
+  font-size: 14px;
+}
+
+.subtask {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
+  gap: 12.5px;
+  margin: 20px;
+}
+.subtask > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--gray-D-1);
+  padding: 12px 8px;
+  color: var(--white);
+  border-radius: 5px;
+}
+.subtask > div p {
+  margin-left: 12px;
+}
+.subtask > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+  width: 17px;
+  height: 17px;
+  background-color: var(--gray-D-2);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.subtask > div div svg {
+  width: 10px;
+  height: 10px;
+  display: none;
+}
+
+.completed {
+  background-color: var(--purple) !important;
+}
+.completed svg {
+  display: block !important;
+}
+
+.text-field {
+  height: 40px;
+  width: 350px;
+  margin: 30px;
+  position: relative;
+}
+.text-field input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgba(130, 143, 163, 0.4588235294);
+  padding: 0px 10px;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 14px;
+  background-color: var(--gray-D-2);
+}
+
+.text-field-empty input {
+  border-color: var(--red);
+}
+.text-field-empty::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "Can’t be empty";
+  color: white;
+  font-size: 14px;
+  color: var(--red);
+  position: absolute;
+}
+
+.dropdown {
+  width: 350px;
+  margin: 30px;
+}
+.dropdown > div:first-child {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(130, 143, 163, 0.4588235294);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.dropdown .dropdown-input {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: var(--gray-D-1);
+  border-radius: 5px;
+}
+.dropdown .dropdown-input div {
+  margin: 18px 0px;
+  cursor: pointer;
+  color: var(--gray-L-1);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  background-color: var(--gray-D-2);
+}
+nav > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav > div button {
+  margin-right: 10px;
+}
+nav > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  width: 30px;
+}
+
+:root {
+  --font: "Plus Jakarta Sans", sans-serif;
+  --purple-g: #ffffff;
+  --purple-g-h: #ffffff;
+  --purple: #635fc7;
+  --purple-L: #a8a4ff;
+  --black: #000112;
+  --gray-D-1: #20212c;
+  --gray-D-2: #2b2c37;
+  --gray-D-3: #3e3f4e;
+  --gray-L-1: #828fa3;
+  --gray-L-2: #e4ebfa;
+  --gray-L-3: #f4f7fd;
+  --white: #ffffff;
+  --red: #ea5555;
+  --red-L: #ff9898;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font);
+  color: var(--white);
+}
+
+body {
+  background-color: var(--gray-D-1);
+}
+
+.purple {
+  background-color: var(--purple);
+}
+.purple:hover {
+  background-color: var(--purple-L);
+}
+
+.red {
+  background-color: var(--red);
+}
+.red:hover {
+  background-color: var(--red-L);
+}
+
+.gray {
+  background-color: var(--purple-g);
+  color: var(--purple) !important;
+}
+.gray:hover {
+  background-color: var(--purple-g-h);
+}

@@ -1,0 +1,32 @@
+.text-field {
+  height: 40px;
+  width: 350px;
+  margin: 30px;
+  position: relative;
+  input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #828fa375;
+    padding: 0px 10px;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 14px;
+    background-color: var(--gray-D-2);
+  }
+}
+.text-field-empty {
+  input {
+    border-color: var(--red);
+  }
+  &::before {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    content: "Can’t be empty";
+    color: white;
+    font-size: 14px;
+    color: var(--red);
+    position: absolute;
+  }
+}

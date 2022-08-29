@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--gray-D-2);
+  > div {
+    display: flex;
+    align-items: center;
+    button {
+      margin-right: 10px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      width: 30px;
+    }
+  }
+}
