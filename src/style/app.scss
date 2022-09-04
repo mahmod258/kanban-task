@@ -3,7 +3,10 @@
 @use "./Interactive-El/SubtaskCheckbox";
 @use "./Interactive-El/textField";
 @use "./Interactive-El/Dropdown";
-@use "./Navbar";
+@use "./Main/navbar";
+@use "./sidebar";
+@use "./Main/main";
+@use "./Boards/boards";
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap");
 :root {
   --font: "Plus Jakarta Sans", sans-serif;
@@ -29,6 +32,7 @@
   margin: 0;
   font-family: var(--font);
   color: var(--white);
+  box-sizing: border-box;
 }
 body {
   background-color: var(--gray-D-1);

@@ -1,0 +1,7 @@
+main {
+  max-width: 100%;
+  transition: 0.5s;
+  @media (max-width: 860px) {
+    margin-left: 0 !important;
+  }
+}
